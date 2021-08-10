@@ -1,0 +1,62 @@
+.result-card {
+  overflow-y: scroll;
+  position: relative;
+  top: -250px;
+  width: 60%;
+  padding: 20px;
+  height: 600px;
+  background-color: #41aea9;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  border-radius: 5px;
+}
+
+.result-flag {
+  margin-right: 20px;
+  height: 100px;
+  border: 5px solid wheat;
+}
+
+.result-header {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.result-header > h1 {
+  margin-top: 25px;
+}
+
+.result-info {
+  margin: 20px;
+  padding: 5px;
+}
+
+.result-card::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.result-card {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.result-card > button {
+  position: sticky;
+  top: 0;
+  float: right;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  transition: 400ms;
+}
+
+.result-card > button:hover {
+  opacity: 0.8;
+  background-color: red;
+}
