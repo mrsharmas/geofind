@@ -17,7 +17,7 @@ function Search() {
           if (res.data) setstate({ data: res.data, success: true });
         },
         () => {
-          alert("No such country");
+          alert("No data");
         }
       );
   };
