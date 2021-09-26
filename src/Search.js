@@ -10,16 +10,14 @@ function Search() {
   const { setstate } = useContext(DataLayer);
 
   const findresult = () => {
-    axios
-      .get(`https://restcountries.eu/rest/v2/name/${value}?fullText=true`)
-      .then(
-        (res) => {
-          if (res.data) setstate({ data: res.data, success: true });
-        },
-        () => {
-          alert("No such country");
-        }
-      );
+    axios.get(`https://restcountries.com/v3/name/${value}?fullText=true`).then(
+      (res) => {
+        if (res.data) setstate({ data: res.data, success: true });
+      },
+      () => {
+        alert("No such country");
+      }
+    );
   };
 
   return (
