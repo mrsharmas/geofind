@@ -29,7 +29,7 @@ function ResultCard() {
         {/* <h5>Population: {data.population}</h5> */}
         <h5>Area: {data.area}</h5>
         {/* <h5>Timezone: {data.timezones.join(",")}</h5> */}
-        <h5>Borders: {data.borders.join(" ,")}</h5>
+        <h5>Borders: {data.borders?.join(" ,")}</h5>
         {/* <h5>Languages: {data.languages.map((lan) => lan.name).join(",")}</h5> */}
         {/* <h5>Currencies: {data.currencies.map((lan) => lan.name).join(",")}</h5> */}
         {/* <h5>
