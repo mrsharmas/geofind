@@ -13,7 +13,7 @@ function ResultCard() {
       <div className="result-header">
         <img className="result-flag" src={data.flags[0]} alt="flag" />
         <h1>
-          {data.name.common} {data.name.nativeName.hin.common}{" "}
+          {data.name?.common} {data.name?.nativeName?.hin?.common}{" "}
           <h5>{data.capital}</h5>
         </h1>
       </div>
